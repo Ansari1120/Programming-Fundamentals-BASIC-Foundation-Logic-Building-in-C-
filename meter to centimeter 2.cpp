@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main()
+{
+	float m,cm;
+	printf("enter the value of meters :");
+	scanf("%f\n", &m);
+	
+	cm = m * 100.0;
+	
+	printf("length in centimeters : %f\n", cm);
+	return 0;
+}

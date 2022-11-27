@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+	int row,n,column;
+	printf("enter row : ");
+	scanf("%d",&n);
+	
+	for(row=0;row<n;row++)
+	{
+		for(column=0;column<n;column++)
+		{
+			if(row==0 || row==n-1 ||column==0 || column==n-1|| row==column || row+column==n-1){
+				printf("*");
+			}
+			else {
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+	return 0;
+}
